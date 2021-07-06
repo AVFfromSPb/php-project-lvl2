@@ -1,4 +1,4 @@
-name: PHP Composer
+name: php-project-lvl2
 
 on:
   push:
