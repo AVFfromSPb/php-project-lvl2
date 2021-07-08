@@ -1,6 +1,9 @@
 <?php
+
 namespace Differ\Tests;
+
 use PHPUnit\Framework\TestCase;
+
 use function Differ\Diff\getDiff;
 
 class DiffTest extends TestCase
@@ -68,15 +71,5 @@ class DiffTest extends TestCase
         ];
         $actual = getDiff($before, $after);
         $this->assertEquals($expected, $actual);
-
-    
-          
-            
-    
-
-          
-    
-    
-  
     }
 }
