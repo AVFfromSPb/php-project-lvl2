@@ -13,12 +13,18 @@
         "bin/gendiff"
     ],
     "scripts": {
-        "phpcs": "phpcs"
+        "phpcs": "phpcs",
+        "phpunit": "phpunit",
+        "test": "phpunit tests"
     },
     "autoload": {
         "psr-4": {
-            "Php\\Package\\": "src"
-        }
+            "Php\\Package\\": "src",
+            "Php\\Package\\Tests\\": "tests"
+        },
+        "files": [
+            "src/Diff.php"
+        ]
     },
     "require": {
         "docopt/docopt": "^1.0"
